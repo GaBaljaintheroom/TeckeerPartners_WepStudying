@@ -16,7 +16,7 @@ public class WepMvcConfig implements WebMvcConfigurer {
                 //Origin이 http:localhost:3000에 대해
                 .allowedOrigins("http://localhost:3000")
                 // GET, POST, PUT, PATCH, DELETE, OPTIONS메소드를 허용한다.
-                .allowedMethods("GET", "PUT", "PATCH", "DELETE", "OPTIONS")
+                .allowedMethods("GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true) // 인증
                 .maxAge(MAX_AGE_SECS);
