@@ -3,10 +3,9 @@ package com.tukoreatp.wepstudying.controller;
 import com.tukoreatp.wepstudying.dto.ResponseDTO;
 import com.tukoreatp.wepstudying.dto.UserDTO;
 import com.tukoreatp.wepstudying.model.UserEntity;
-import com.tukoreatp.wepstudying.security.Tokenprovider;
+import com.tukoreatp.wepstudying.security.TokenProvider;
 import com.tukoreatp.wepstudying.service.UserService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +19,7 @@ public class UserController {
     private UserService userService;
 
     @Autowired
-    private Tokenprovider tokenProvider;
+    private TokenProvider tokenProvider;
 
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@RequestBody UserDTO userDTO){

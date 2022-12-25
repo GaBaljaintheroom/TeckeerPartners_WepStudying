@@ -13,7 +13,7 @@ import java.util.Date;
 
 @Slf4j
 @Service
-public class Tokenprovider {
+public class TokenProvider {
     private static final String SECRET_KEY = "F1RpX30pMqDbiAkm1fArbrmVkDD4RqISskGZmBFax5oGVxzXXWUzTR5JyskiHMIV9M10icegkpi46AdvrcX1E6CmTUBc6IFbTPiD";
 
     public String create(UserEntity userEntity){
